@@ -1,0 +1,16 @@
+.main{
+    color : rgb(0, 0, 0);
+    font-size: 80px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url("relx_sdg_inspiration_day_website_banner_2.png");
+    height: 20%;
+    position: relative;
+      top: 0;
+      left: 0;
+}
+
+.left{
+    position: absolute;
+      top: 0%;
+      left: 80%;
+}
