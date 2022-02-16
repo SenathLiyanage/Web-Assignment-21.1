@@ -67,6 +67,32 @@
   border-radius: 12px;
 }
 
+/*Main image and the text*/
+
+.cont {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.text {
+  position: absolute;
+  top: 25px;
+  left: 16px;
+  font-size: 40px;
+  text-align:justify;
+
+  background-color: rgba(0, 247, 111, 0.39);
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.textx{
+  border: 3px solid white;
+  border-radius: 12px;
+  padding: 0%;
+}
 
 /* Rounded linked Avetar images for footer*/
 
