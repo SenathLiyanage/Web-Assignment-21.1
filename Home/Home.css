@@ -1,3 +1,8 @@
+/*Body background*/
+body {
+  background-image: url("istockphoto-1284691550-612x612.jpg");
+  background-size: cover;
+}
 
 /*Head section*/
 .head1{
@@ -56,6 +61,11 @@
 
 /*Body content*/
 
+/*Round corners*/
+.round{
+  border-radius: 12px;
+}
+
 /*Content linked ribbon*/
 
 .ribColor{
@@ -67,7 +77,7 @@
   border-radius: 12px;
 }
 
-/*Main image and the text*/
+/*Main images and the text*/
 
 .cont {
   position: relative;
@@ -77,21 +87,41 @@
 
 .text {
   position: absolute;
-  top: 25px;
+  top: 20px;
   left: 16px;
   font-size: 40px;
   text-align:justify;
 
-  background-color: rgba(0, 247, 111, 0.39);
+  background-color: rgba(0, 247, 111, 0.288);
+  border-radius: 12px;
   color: white;
   padding-left: 20px;
   padding-right: 20px;
 }
 
 .textx{
-  border: 3px solid white;
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  right: 10px;
+  font-size: 50px;
+  text-align:center;
+
+  background-color: rgba(0, 247, 111, 0.288);
   border-radius: 12px;
-  padding: 0%;
+  color:#00d9ff;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/*Table*/
+td{
+  text-align: center;
+}
+
+.tablex{
+  background-color: rgba(0, 247, 111, 0.329);
+  border-radius: 12px;
 }
 
 /* Rounded linked Avetar images for footer*/
@@ -105,5 +135,41 @@
   padding: 1%;
 }
 
+
+/*Paragraph*/
+
+.p1{
+    font-size: 20px;
+    color: #737785;
+    text-align: center;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+.bgp1{
+  background-color: #3ceb48;
+  border-radius: 12px;
+  padding-left: 10%;
+}
+
+.para{
+  background-color: #cccccc;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  opacity: 0.8;
+  position:absolute;
+  left: 45%;
+  top: 60%;
+  font-family:sans-serif;
+  width: 80%;   
+}
+.back{
+  background-image: url("Gir-National-Park-e1598571541189.jpeg"), 
+  url("Phibsoo-Wildlife-Sanctuary-cover.webp"), 
+  url("45665028_303.jpg");
+}
 
 
