@@ -1,4 +1,9 @@
+<?php
+  echo "senudu";
+ ?>
+
 <!DOCTYPE html>
+
 <html>
 <head>
 	<meta charset="utf-8">
