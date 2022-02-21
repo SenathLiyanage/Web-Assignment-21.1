@@ -1,5 +1,6 @@
 <?php
   echo "senudu";
+  echo "dehiaththakandiya";
  ?>
 
 <!DOCTYPE html>
