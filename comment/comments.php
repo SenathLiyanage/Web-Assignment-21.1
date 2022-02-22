@@ -12,7 +12,20 @@ try {
 }catch(PDOException $e){
   echo "Connection failed : ". $e->getMessage();
 }
+
+if (isset($_POST['user']) && isset($_POST['email']) && isset($_POST['text'])) {
+    
+  $name = $_POST['user'];
+  $email = $_POST['email'];
+  $text = $_POST['text'];
+
+  
+
+  
+
+}
  ?>
+
 
 <!DOCTYPE html>
 
