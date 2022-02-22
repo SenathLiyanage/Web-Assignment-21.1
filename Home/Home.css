@@ -109,7 +109,8 @@ body {
 
   background-color: rgba(0, 247, 111, 0.288);
   border-radius: 12px;
-  color:#00d9ff;
+  color:#c6fd00;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
   padding-left: 20px;
   padding-right: 20px;
 }
