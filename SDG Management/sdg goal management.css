@@ -1,3 +1,8 @@
+body
+{
+  background-size:cover;
+}
+
 /*Head section*/
 .head1{
     color : rgb(0, 0, 0);
@@ -5,6 +10,8 @@
     font-family: Arial Black;
     padding-left: 1%;
 }
+
+
 
 .head2{
   color : rgb(53, 53, 53);
