@@ -12,7 +12,27 @@ try {
 }catch(PDOException $e){
   echo "Connection failed : ". $e->getMessage();
 }
+
+if (isset($_POST['user']) && isset($_POST['email']) && isset($_POST['text'])) {
+    
+  $name = $_POST['user'];
+  $email = $_POST['email'];
+  $text = $_POST['text'];
+
+   $sql = "INSERT INTO comments(`name`,`email`,`comment`) VALUES (?,?,?)";
+
+  $save = $conn->prepare($sql);
+  $save->execute([$name,$email,$text]);
+
+  if ($save) {
+    header('Refresh: 1; url=comments.php');
+  }
+
+  
+
+}
  ?>
+
 
 <!DOCTYPE html>
 
@@ -203,18 +223,18 @@ try {
                     <b>Comments</b>
             </p>
             <br>
-  <form class="form-block">
+<form class="form-block" action="comments.php" method="post">
     <div class="row">
       <div class="col-xs-12 col-sm-6">
         <div class="form-group fl_icon">
           <div class="icon"><i class="fa fa-user"></i></div>
-          <input class="form-input" type="text" placeholder="Your name" name="user">
+          <input class="form-input" type="text" placeholder="Your name" name="user" style="color: black;">
         </div>
       </div>
       <div class="col-xs-12 col-sm-6 fl_icon">
         <div class="form-group fl_icon">
           <div class="icon"><i class="fa fa-envelope-o"></i></div>
-          <input class="form-input" type="text" placeholder="Your email" name="email">
+          <input class="form-input" type="text" placeholder="Your email" name="email" style="color: black;">
         </div>
       </div>
       
@@ -222,11 +242,11 @@ try {
     <div class="row">
       <div class="col-12">                 
         <div class="form-group">
-          <textarea class="form-input" required="" placeholder="Your text" name="text"></textarea>
+          <textarea class="form-input" required="" placeholder="Your text" name="text" style="color: black;"></textarea>
         </div>
       </div>
     </div>
-    <a class="btn btn-primary pull-right">submit</a>
+    <button class="btn btn-primary pull-right" type="submit">submit</button>
   </form>
 </div>
 </div>
