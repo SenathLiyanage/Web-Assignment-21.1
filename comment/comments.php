@@ -19,7 +19,14 @@ if (isset($_POST['user']) && isset($_POST['email']) && isset($_POST['text'])) {
   $email = $_POST['email'];
   $text = $_POST['text'];
 
-  
+   $sql = "INSERT INTO comments(`name`,`email`,`comment`) VALUES (?,?,?)";
+
+  $save = $conn->prepare($sql);
+  $save->execute([$name,$email,$text]);
+
+  if ($save) {
+    header('Refresh: 1; url=comments.php');
+  }
 
   
 
