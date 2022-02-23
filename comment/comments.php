@@ -38,9 +38,9 @@ if (isset($_POST['user']) && isset($_POST['email']) && isset($_POST['text'])) {
 
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Comeents SDG</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Comeents SDG</title>
 
     <link rel="stylesheet" type="text/css" href="font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -51,7 +51,7 @@ if (isset($_POST['user']) && isset($_POST['email']) && isset($_POST['text'])) {
 
 
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 
   <script type="text/javascript" src="comments.js"></script>
@@ -96,127 +96,56 @@ if (isset($_POST['user']) && isset($_POST['email']) && isset($_POST['text'])) {
 <div class="be-comment-block">
   <h1 class="comments-title">Popular Comments</h1>
   <div class="be-comment" style="padding-bottom: 20px;">
+   <?php
+   $stmt = $conn->prepare("SELECT * FROM `comments`");
+   $stmt->execute();
+
+     while ($row = $stmt->fetch()) {
+      
+     
+
+   ?>
     <div class="be-img-comment">  
-      <a href="blog-detail-2.html">
-        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="be-ava-comment">
+      <a href="">
+        <img src="img/user.png" alt="user image" class="be-ava-comment">
       </a>
     </div>
     <div class="be-comment-content">
       
         <span class="be-comment-name">
-          <a href="blog-detail-2.html">Ravi Sah</a>
+          <a href="blog-detail-2.html"><?=$row['name']?></a>
           </span>
         <span class="be-comment-time">
           <i class="fa fa-clock-o"></i>
-          May 27, 2015 at 3:14am
+          <?=$row['date']?>
         </span>
 
       <p class="be-comment-text">
-        Pellentesque gravida tristique ultrices. 
-        Sed blandit varius mauris, vel volutpat urna hendrerit id. 
-        Curabitur rutrum dolor gravida turpis tristique efficitur.
+        <?=$row['comment']?>
       </p>
       <ul class="list-inline d-sm-flex my-0 ">
                 <li class="list-inline-item g-mr-20">
                   <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
                     <i class="fa fa-thumbs-up g-pos-rel g-top-1 g-mr-3 " style="color:blue;"></i>
-                    178
+                   <?=$row['likes']?>
                   </a>
                 </li>
                 <li class="list-inline-item g-mr-20">
                   <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
                     <i class="fa fa-thumbs-down g-pos-rel g-top-1 g-mr-3 likeButton"  style="color:red;"></i>
-                    34
+                   <?=$row['dislike']?>
                   </a>
                 </li>
-                <li class="list-inline-item ml-auto">
-                  <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
-                    <i class="fa fa-reply g-pos-rel g-top-1 g-mr-3 likeButton"  style="color:black;"></i>
-                    Reply
-                  </a>
-                </li>
+               
               </ul>
     </div>
 
   </div>
-  <div class="be-comment" style="padding-bottom: 20px;">
-    <div class="be-img-comment">  
-      <a href="blog-detail-2.html">
-        <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" class="be-ava-comment">
-      </a>
-    </div>
-    <div class="be-comment-content">
-      <span class="be-comment-name">
-        <a href="blog-detail-2.html">Phoenix, the Creative Studio</a>
-      </span>
-      <span class="be-comment-time">
-        <i class="fa fa-clock-o"></i>
-        May 27, 2015 at 3:14am
-      </span>
-      <p class="be-comment-text">
-        Nunc ornare sed dolor sed mattis. In scelerisque dui a arcu mattis, at maximus eros commodo. Cras magna nunc, cursus lobortis luctus at, sollicitudin vel neque. Duis eleifend lorem non ant. Proin ut ornare lectus, vel eleifend est. Fusce hendrerit dui in turpis tristique blandit.
-      </p>
-        <ul class="list-inline d-sm-flex my-0 ">
-                <li class="list-inline-item g-mr-20">
-                  <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
-                    <i class="fa fa-thumbs-up g-pos-rel g-top-1 g-mr-3 " style="color:blue;"></i>
-                    178
-                  </a>
-                </li>
-                <li class="list-inline-item g-mr-20">
-                  <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
-                    <i class="fa fa-thumbs-down g-pos-rel g-top-1 g-mr-3 likeButton"  style="color:red;"></i>
-                    34
-                  </a>
-                </li>
-                <li class="list-inline-item ml-auto">
-                  <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
-                    <i class="fa fa-reply g-pos-rel g-top-1 g-mr-3 likeButton"  style="color:black;"></i>
-                    Reply
-                  </a>
-                </li>
-              </ul>
-    </div>
-  </div>
-  <div class="be-comment" style="padding-bottom: 20px;">
-    <div class="be-img-comment">  
-      <a href="blog-detail-2.html">
-        <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="" class="be-ava-comment">
-      </a>
-    </div>
-    <div class="be-comment-content">
-      <span class="be-comment-name">
-        <a href="blog-detail-2.html">Cüneyt ŞEN</a>
-      </span>
-      <span class="be-comment-time">
-        <i class="fa fa-clock-o"></i>
-        May 27, 2015 at 3:14am
-      </span>
-      <p class="be-comment-text">
-        Cras magna nunc, cursus lobortis luctus at, sollicitudin vel neque. Duis eleifend lorem non ant
-      </p>
-        <ul class="list-inline d-sm-flex my-0 ">
-                <li class="list-inline-item g-mr-20">
-                  <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
-                    <i class="fa fa-thumbs-up g-pos-rel g-top-1 g-mr-3 " style="color:blue;"></i>
-                    178
-                  </a>
-                </li>
-                <li class="list-inline-item g-mr-20">
-                  <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
-                    <i class="fa fa-thumbs-down g-pos-rel g-top-1 g-mr-3 likeButton"  style="color:red;"></i>
-                    34
-                  </a>
-                </li>
-                <li class="list-inline-item ml-auto">
-                  <a class="u-link-v5 g-color-gray-dark-v4 g-color-primary--hover" href="#!">
-                    <i class="fa fa-reply g-pos-rel g-top-1 g-mr-3 likeButton"  style="color:black;"></i>
-                    Reply
-                  </a>
-                </li>
-              </ul>
-    </div>
-  </div>
+
+  <?php
+    }
+  ?>
+
   <br><br>
    <p class="lead mb-0">Your
                 
