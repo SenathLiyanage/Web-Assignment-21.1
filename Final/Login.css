@@ -1,0 +1,91 @@
+body
+{
+    background-image:url("pexels-photo-586744.webp");
+    background-position:center;
+}
+
+table
+{
+    background-color:rgba(1, 196, 255, 0.411);
+    border-radius: 12px;
+    margin:150px 0px 0px 600px;
+    padding:10px 80px 100px 0px;
+}
+
+img
+{
+    padding-left:115px;
+}
+
+#id1
+{
+    margin:0px 0px 0px 0px;
+    padding: 20px 20px 20px 100px;
+    text-shadow: 0 0 5px #494646;
+}
+
+h1
+{
+    margin:0px 0px 0px 0px;
+    padding:20px 20px 20px 20px;
+}
+
+#id2
+{
+    margin:0px 0px 0px 0px;
+    padding:20px 20px 20px 80px;
+}
+
+#name
+{
+    margin:0px 0px 0px -180px;
+    padding:0px 0px 0px 0px;
+}
+
+#id3
+{
+    margin:0px 0px 0px 0px;
+    padding:20px 20px 20px 80px;
+}
+
+#pass
+{
+    margin:0px 0px 0px -180px;
+    padding:0px 0px 0px 0px;
+}
+
+#login
+{
+    margin:0px 0px 0px 50px;
+    padding:5px 5px 5px 5px;
+    border:2px solid rgba(255, 255, 255, 0.527);
+    border-radius:25px;
+    background-color: rgba(75, 69, 70, 0.527);
+    font-size:120%;
+    color: white;
+}
+
+#cancel
+{
+    margin:0px 0px 0px -50px;
+    padding:5px 5px 5px 5px;
+    border:2px solid rgba(255, 255, 255, 0.527);
+    border-radius:25px;
+    background-color: rgba(75, 69, 70, 0.527);
+    font-size:120%;
+    color: white;
+}
+
+#login:hover
+{
+    text-decoration:underline;
+    font-weight:bold;
+    background-color:rgba(91, 79, 202, 0.329);
+}
+
+#cancel:hover
+{
+    text-decoration:underline;
+    font-weight:bold;
+    background-color:rgb(91, 79, 202, 0.329);
+}
