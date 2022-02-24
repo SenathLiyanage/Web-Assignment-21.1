@@ -1,0 +1,176 @@
+/*Body background*/
+body {
+  background-image: url("istockphoto-1284691550-612x612.jpg");
+  background-size: cover;
+}
+
+/*Head section*/
+.head1{
+    color : rgb(0, 0, 0);
+    font-size: 80px;
+    font-family: Arial Black;
+    padding-left: 1%;
+}
+
+.head2{
+  color : rgb(53, 53, 53);
+  font-size: 60px;
+  font-family: Stencil Std;
+  padding-left: 1%;
+  padding-top: 2%;
+}
+
+.left{
+    position: absolute;
+      top: 0%;
+      left: 78%;
+}
+
+.headerbackground {
+  background-image: url("GreenBackGround.jpg");
+  background-size: contains;
+  width: 100%;
+  height: 35%;
+
+  border: 3px solid white;
+  border-radius: 12px;
+  padding: 0%;
+
+  position: relative;
+      top: 0;
+      left: 0;
+}
+
+.backimage {
+  width:5%;  
+  height:5%;  
+  background-size: contains;    
+  background:transparent url("SGD15logo.png") 
+             repeat scroll 0% 0%;  
+}
+
+#container {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  background: url("SGD15logo.png");
+  background-repeat: repeat-x;
+    
+    background-size: auto 100%;
+}
+
+/*Body content*/
+
+/*Round corners*/
+.round{
+  border-radius: 12px;
+}
+
+/*Content linked ribbon*/
+
+.ribColor{
+  color: white;
+  font-size: large;
+  background-color: rgb(28, 240, 134);
+  height: 5%;
+  border: 3px solid white;
+  border-radius: 12px;
+}
+
+/*Main images and the text*/
+
+.cont {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.text {
+  position: absolute;
+  top: 20px;
+  left: 16px;
+  font-size: 40px;
+  text-align:justify;
+
+  background-color: rgba(0, 247, 111, 0.288);
+  border-radius: 12px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.textx{
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  right: 10px;
+  font-size: 50px;
+  text-align:center;
+
+  background-color: rgba(0, 247, 111, 0.288);
+  border-radius: 12px;
+  color:#c6fd00;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/*Table*/
+td{
+  text-align: center;
+}
+
+.tablex{
+  background-color: rgba(0, 247, 111, 0.329);
+  border-radius: 12px;
+}
+
+/* Rounded linked Avetar images for footer*/
+
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  float: right;
+  padding: 1%;
+}
+
+
+/*Paragraph*/
+
+.p1{
+    font-size: 20px;
+    color: #737785;
+    text-align: center;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+.bgp1{
+  background-color: #3ceb48;
+  border-radius: 12px;
+  padding-left: 10%;
+}
+
+.para{
+  background-color: #cccccc;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  opacity: 0.8;
+  position:absolute;
+  left: 45%;
+  top: 60%;
+  font-family:sans-serif;
+  width: 80%;   
+}
+.back{
+  background-image: url("Gir-National-Park-e1598571541189.jpeg"), 
+  url("Phibsoo-Wildlife-Sanctuary-cover.webp"), 
+  url("45665028_303.jpg");
+}
+
+

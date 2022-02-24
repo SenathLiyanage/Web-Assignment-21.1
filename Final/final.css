@@ -1,0 +1,76 @@
+/*Body background*/
+body {
+    background-image: url("istockphoto-1284691550-612x612.jpg");
+    background-size: cover;
+  }
+  
+  /*Head section*/
+.head1{
+    color : rgb(0, 0, 0);
+    font-size: 80px;
+    font-family: Arial Black;
+    padding-left: 1%;
+}
+
+.head2{
+  color : rgb(53, 53, 53);
+  font-size: 60px;
+  font-family: Stencil Std;
+  padding-left: 1%;
+  padding-top: 2%;
+}
+
+.left{
+    position: absolute;
+      top: 0%;
+      left: 78%;
+}
+
+.headerbackground {
+  background-image: url("GreenBackGround.jpg");
+  background-size: contains;
+  width: 100%;
+  height: 35%;
+
+  border: 3px solid white;
+  border-radius: 12px;
+  padding: 0%;
+
+  position: relative;
+      top: 0;
+      left: 0;
+}
+
+.backimage {
+  width:5%;  
+  height:5%;  
+  background-size: contains;    
+  background:transparent url("SGD15logo.png") 
+             repeat scroll 0% 0%;  
+}
+
+#container {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  background: url("SGD15logo.png");
+  background-repeat: repeat-x;
+    
+    background-size: auto 100%;
+}
+
+/*Round corners*/
+.round{
+    border-radius: 12px;
+  }
+  
+  /*Content linked ribbon*/
+  
+  .ribColor{
+    color: white;
+    font-size: large;
+    background-color: rgb(28, 240, 134);
+    height: 5%;
+    border: 3px solid white;
+    border-radius: 12px;
+  }
