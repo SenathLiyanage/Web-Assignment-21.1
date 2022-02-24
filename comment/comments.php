@@ -140,11 +140,13 @@ if (isset($_POST['user']) && isset($_POST['email']) && isset($_POST['text'])) {
               </ul>
     </div>
 
-  </div>
-
-  <?php
+     <?php
     }
   ?>
+  
+  </div>
+
+ 
 
   <br><br>
    <p class="lead mb-0">Your
